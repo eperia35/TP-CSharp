@@ -1,0 +1,13 @@
+C:\Users\thoma\source\repos\TpHeritage\TpHeritage\bin\Debug\netcoreapp3.1\TpHeritage.exe
+C:\Users\thoma\source\repos\TpHeritage\TpHeritage\bin\Debug\netcoreapp3.1\TpHeritage.deps.json
+C:\Users\thoma\source\repos\TpHeritage\TpHeritage\bin\Debug\netcoreapp3.1\TpHeritage.runtimeconfig.json
+C:\Users\thoma\source\repos\TpHeritage\TpHeritage\bin\Debug\netcoreapp3.1\TpHeritage.runtimeconfig.dev.json
+C:\Users\thoma\source\repos\TpHeritage\TpHeritage\bin\Debug\netcoreapp3.1\TpHeritage.dll
+C:\Users\thoma\source\repos\TpHeritage\TpHeritage\bin\Debug\netcoreapp3.1\TpHeritage.pdb
+C:\Users\thoma\source\repos\TpHeritage\TpHeritage\obj\Debug\netcoreapp3.1\TpHeritage.csprojAssemblyReference.cache
+C:\Users\thoma\source\repos\TpHeritage\TpHeritage\obj\Debug\netcoreapp3.1\TpHeritage.AssemblyInfoInputs.cache
+C:\Users\thoma\source\repos\TpHeritage\TpHeritage\obj\Debug\netcoreapp3.1\TpHeritage.AssemblyInfo.cs
+C:\Users\thoma\source\repos\TpHeritage\TpHeritage\obj\Debug\netcoreapp3.1\TpHeritage.csproj.CoreCompileInputs.cache
+C:\Users\thoma\source\repos\TpHeritage\TpHeritage\obj\Debug\netcoreapp3.1\TpHeritage.dll
+C:\Users\thoma\source\repos\TpHeritage\TpHeritage\obj\Debug\netcoreapp3.1\TpHeritage.pdb
+C:\Users\thoma\source\repos\TpHeritage\TpHeritage\obj\Debug\netcoreapp3.1\TpHeritage.genruntimeconfig.cache
