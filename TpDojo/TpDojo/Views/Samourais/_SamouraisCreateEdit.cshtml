@@ -1,0 +1,47 @@
+﻿@model TpDojo.Models.SamouraiViewModel
+
+<div class="col-md-12">
+    <div class="row">
+        <div class="form-group" style="width: 100%;">
+            <div class="col-md-1 text-right">
+                @Html.LabelFor(model => model.Samourai.Nom, htmlAttributes: new { @class = "control-label" })
+            </div>
+            <div class="col-md-5">
+                @Html.EditorFor(model => model.Samourai.Nom, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Samourai.Nom, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="col-md-1 text-right">
+                @Html.LabelFor(model => model.Samourai.Force, htmlAttributes: new { @class = "control-label col-md-2" })
+            </div>
+            <div class="col-md-5">
+                @Html.EditorFor(model => model.Samourai.Force, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Samourai.Force, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+</div>
+<br />
+
+<div class="col-md-12" style="margin-top: 25px;">
+    <div class="row">
+        <div class="form-group" style="width: 100%;">
+            <div class="col-md-1 text-right">
+                @Html.LabelFor(model => model.Samourai.Arme, htmlAttributes: new { @class = "control-label" })
+            </div>
+            <div class="col-md-5">
+                @Html.DropDownListFor(model => model.ArmeId, new SelectList(Model.Armes, "Id", "Nom"), "Aucune arme sélectionnée.")
+                @Html.ValidationMessageFor(model => model.ArmeId, "", new { @class = "text-danger" })
+            </div>
+
+            <div class="col-md-1 text-left">
+                @Html.LabelFor(model => model.Samourai.ArtsMartiaux, "Arts martiaux", htmlAttributes: new { @class = "control-label" })
+            </div>
+            <div class="col-md-5">
+                @Html.ListBoxFor(model => model.ArtsMartiauxIds, new SelectList(Model.ArtsMartiaux, "Id", "Nom"), "Selectionner un ou plusieurs arts martiaux")
+                @Html.ValidationMessageFor(model => model.ArtsMartiauxIds, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+</div>
+<br />

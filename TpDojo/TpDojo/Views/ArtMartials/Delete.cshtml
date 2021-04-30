@@ -1,0 +1,24 @@
+﻿@model TpDojo.Entities.ArtMartial
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2 class="text-center">Suppression d'un art-martial</h2>
+<hr />
+<h3>Êtes-vous sûre de vouloir supprimer cet art-martial ?</h3>
+<br />
+
+<div>
+    @Html.Partial("_ArtMartialDetailsDelete", Model)
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+    <div class="form-actions mt25 text-center">
+        <input type="submit" value="Supprimer" class="btn btn-danger" />
+        @Html.ActionLink("Retour", "Index", null, new { @class = "btn btn-default" })
+    </div>
+    }
+</div>

@@ -1,0 +1,71 @@
+﻿@model IEnumerable<TpDojo.Entities.Samourai>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Liste des samouraïs</h2>
+<br />
+
+<p>
+    @Html.ActionLink("Créer", "Create", null, new { @class = "btn btn-success" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Force)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Arme)
+        </th>
+        <th>
+            <div>Arts martiaux</div>
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Force)
+            </td>
+            <td>
+                @if (item.Arme != null)
+                {
+                    @Html.DisplayFor(modelItem => item.Arme.Nom)
+                }
+                else
+                {
+                    <div>Aucune arme</div>
+                }
+            </td>
+            <td>
+                @if (item.ArtsMartiaux != null)
+                {
+                    foreach (var artMartial in item.ArtsMartiaux)
+                    {
+                        @Html.DisplayFor(modelItem => artMartial.Nom)
+                        <br />
+                    }
+                }
+                else
+                {
+                    <div>Aucun art martial</div>
+                }
+            </td>
+            <td>
+                @Html.ActionLink("Modifier", "Edit", new { id = item.Id }, new { @class = "btn btn-warning" })
+                @Html.ActionLink("Détails", "Details", new { id = item.Id }, new { @class = "btn btn-primary" })
+                @Html.ActionLink("Supprimer", "Delete", new { id = item.Id }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,24 @@
+﻿@model TpDojo.Entities.ArtMartial
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2 class="text-center">Création d'un art-martial</h2>
+<hr />
+<br />
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-inline row">
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.Partial("_ArtMartialCreateEdit", Model)
+
+    <div class="col-md-12 mt25 text-center">
+        <input type="submit" value="Créer" class="btn btn-success" />
+        @Html.ActionLink("Retour", "Index", null, new { @class = "btn btn-default" })
+    </div>
+</div>
+}

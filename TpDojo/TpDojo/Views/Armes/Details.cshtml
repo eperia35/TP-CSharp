@@ -1,0 +1,17 @@
+﻿@model TpDojo.Entities.Arme
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2 class="text-center">Détail d'une arme</h2>
+<hr />
+<br />
+
+<div>
+    @Html.Partial("_ArmesDetailsDelete", Model)
+</div>
+<div class="mt25 text-center">
+    @Html.ActionLink("Modifier", "Edit", new { id = Model.Id }, new { @class = "btn btn-warning" })
+    @Html.ActionLink("Retour", "Index", null, new { @class = "btn btn-default" })
+</div>
